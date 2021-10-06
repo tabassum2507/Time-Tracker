@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.container {
+  padding: 5em 2em;
+}
+
+.profile-card {
+  color: hsl(236, 100%, 87%);
+  height: 16em;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1em;
+}
+
+.profile-card-header {
+  flex-grow: 2.5;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1em;
+  padding: 0 2em;
+}
+
+.profile-card-header img {
+  height: 4.5em;
+  border: 0.25em solid white;
+  border-radius: 50%;
+}
+
+.profile-card-header .profile {
+  flex-grow: 3;
+  display: block;
+}
+
+.profile-card-header .profile p {
+  color: hsl(246, 100%, 80%);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0 0 0.25em;
+}
+.profile-card-header .profile h1 {
+  color: hsl(256, 85%, 95%);
+  font-weight: 300;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.card-footer {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2em;
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-footer a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: hsl(235, 45%, 61%);
+  font-weight: 400;
+}
+
+.card-footer a:hover,
+.card-footer .active {
+  color: white;
+}
+
+.work-card,
+.play-card,
+.study-card,
+.exercise-card,
+.social-card,
+.self-care-card {
+  position: relative;
+  margin-top: 2em;
+  border-radius: 1em;
+  padding-top: 0.25em;
+  overflow: hidden;
+}
+
+.work-card {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play-card {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study-card {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-card {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social-card {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care-card {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.img-wrapper {
+  right: 1.25em;
+  top: -0.5em;
+  position: absolute;
+}
+
+.img-wrapper img {
+  aspect-ratio: 1;
+}
+
+.card-content {
+  position: relative;
+  margin-top: 2.75em;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1em;
+  z-index: 1;
+  padding: 2em 2em;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-content:hover {
+  background-color: hsl(236, 41%, 34%);
+}
+
+.card-content h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 0 0 0.5em;
+}
+
+.card-content h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.card-content .previous {
+  text-align: right;
+  float: right;
+  position: relative;
+  top: -1.75em;
+}
+
+.more img {
+  position: relative;
+  top: 4em;
+  right: 2em;
+  float: right;
+  height: 0.3em;
+  margin: 1em 0;
+  z-index: 2;
+}
+
+.more img:hover {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.card-content p {
+  color: hsl(237, 41%, 75%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 15rem;
+    grid-gap: 2em;
+    height: 100%;
+    align-content: center;
+    padding: 0;
+  }
+
+  .profile-card {
+    grid-column: 1;
+    height: 32rem;
+    grid-row: 1 / 3;
+  }
+
+  .profile-card-header {
+    display: block;
+    padding: 2em;
+  }
+
+  .profile-card-header .profile {
+    margin-top: 2em;
+  }
+
+  .profile-card-header .profile p {
+    font-size: 1rem;
+  }
+  .profile-card-header .profile h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2em;
+  }
+
+  .card-footer a {
+    font-size: 1rem;
+  }
+
+  .work-card,
+  .play-card,
+  .study-card,
+  .exercise-card,
+  .social-card,
+  .self-care-card {
+    margin-top: 0;
+    height: 15rem;
+  }
+
+  .card-content h2 {
+    font-size: 1rem;
+  }
+
+  .card-content h1 {
+    font-size: 3.2rem;
+    margin: 0.5em 0 0.25em;
+  }
+
+  .card-content .previous {
+    text-align: left;
+    float: none;
+    position: static;
+    font-size: 1rem;
+  }
+}

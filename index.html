@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="profile-card">
+        <div class="profile-card-header">
+          <img src="images/image-jeremy.png" alt="Profile Picture" />
+          <div class="profile">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <ul id="timeframes" class="card-footer">
+          <li>
+            <a id="daily" class="" href="#">Daily</a>
+          </li>
+          <li>
+            <a id="weekly" class="active" href="#">Weekly</a>
+          </li>
+          <li>
+            <a id="monthly" class="" href="#">Monthly</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-card">
+        <div class="img-wrapper">
+          <img src="images/icon-work.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Work</h2>
+          <h1><span id="workHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="workPrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+
+      <div class="play-card">
+        <div class="img-wrapper">
+          <img src="images/icon-play.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Play</h2>
+          <h1><span id="playHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="playPrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+
+      <div class="study-card">
+        <div class="img-wrapper">
+          <img src="images/icon-study.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Study</h2>
+          <h1><span id="studyHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="studyPrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+
+      <div class="exercise-card">
+        <div class="img-wrapper">
+          <img src="images/icon-exercise.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Exercise</h2>
+          <h1><span id="exerciseHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="exercisePrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+
+      <div class="social-card">
+        <div class="img-wrapper">
+          <img src="images/icon-social.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Social</h2>
+          <h1><span id="socialHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="socialPrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+
+      <div class="self-care-card">
+        <div class="img-wrapper">
+          <img src="images/icon-self-care.svg" alt="" aria-hidden="true" />
+        </div>
+        <a class="more" href="#"><img src="images/icon-ellipsis.svg" alt="More" /></a>
+        <div class="card-content">
+          <h2>Self Care</h2>
+          <h1><span id="selfCareHours">32</span>hrs</h1>
+          <p class="previous">
+            Last <span class="time">Week</span> - <span id="selfCarePrev">36</span>hrs
+          </p>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
